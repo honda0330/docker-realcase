@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: web_counter
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    container_name: db_counter
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: counter
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

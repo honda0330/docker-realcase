@@ -5,7 +5,7 @@ $host = 'db';
 $dbname = 'counter';
 $user = 'root';
 $pass = 'root123';
-#menambahkan pesan
+#menambahkan pesan langsung edit
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
     $pdo->exec("CREATE TABLE IF NOT EXISTS visits (

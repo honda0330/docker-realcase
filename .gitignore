@@ -1,0 +1,19 @@
+#Docker
+*.log
+*.pid
+
+#File sementara
+*.tmp
+*.swp
+.DS_Store
+
+#Environment
+.env
+.env.local
+
+#IDE
+.vscode/
+.idea/
+
+#OS
+Thumbs.db
